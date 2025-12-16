@@ -18,11 +18,14 @@ jobs:
       # - name: 'Testing Printing'
       #   run: echo Rahma
 
-        - name: 'Befor'
-          run: ls
+      # - name: 'Befor'
+      #   run: ls
 
         
-        - uses: actions/checkout@v3
+       - uses: actions/checkout@v3
           
-        - name: 'After'
-          run: ls
+      #  - name: 'After'
+      #    run: ls
+       - name: "Login to Docker hub"
+         run: docker login --username rahmaelraw --password dckr_pat_OLwv55WYNGVH8bh18ndyLYCu4vM
+
