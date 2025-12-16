@@ -18,5 +18,11 @@ jobs:
       # - name: 'Testing Printing'
       #   run: echo Rahma
 
-        - name: 'Printing folder conents'
+        - name: 'Befor'
+          run: ls
+
+        
+        - uses: action/checkout@v3
+          
+        - name: 'After'
           run: ls
